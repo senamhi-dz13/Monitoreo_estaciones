@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizador PDF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #1e1e1e;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background: #111;
+            color: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 95vh;
+            border: none;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h3>Documento PDF</h3>
+    <a class="btn" href="pdf/documento.pdf" download>Descargar PDF</a>
+</header>
+
+<iframe src="pdf/documento.pdf"></iframe>
+
+</body>
+</html>
